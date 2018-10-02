@@ -1,0 +1,22 @@
+﻿<Window x:Class="PracticaUsuarios.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaUsuarios"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Margin="8,8,8,0" FontSize="20">Nuevo Usuario:</TextBlock>
+        <ComboBox Margin="8,8,8,0" Name="cbTipoUsuario" SelectionChanged="cbTipoUsuario_SelectionChanged">
+            <ComboBoxItem>Alumno</ComboBoxItem>
+            <ComboBoxItem>Maestro</ComboBoxItem>
+        </ComboBox>
+
+        <StackPanel Name="panelConfiguracion">
+            
+        </StackPanel>
+
+        <Button Margin="8,16,8,0" Name="btnGuardarUsuario" Click="btnGuardarUsuario_Click">Guardar</Button>
+    </StackPanel>
+</Window>
